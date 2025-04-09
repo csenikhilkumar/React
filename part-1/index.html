@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+    <script>
+        function onButton(){
+            const currentValue = document.getElementById("btn").innerHTML;
+            console.log(currentValue.split("")) //print the splited string based on spaces like "counter" "0"
+            const currentCounter = currentValue.split(" ")[1]; // this line of code will return the value of arrays 2nd index and target/select the 2nd element of the array 
+            console.log(currentCounter)
+            const newCounter  =parseInt(currentCounter)+1;  // this line of code will convert the string into integer and add 1 in the integer 
+            document.getElementById("btn").innerHTML="Counter "+newCounter // this line of code will set the new value of the buttton 
+        }
+    </script>
+
+<body>
+    
+    <button onclick="onButton()" id="btn">Counter 0</button> <!-- this line of code will create a button with the id of btn and the value of the button is Counter 0 to start the counter from 0-->
+</body>
+</html>
